@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Glassmorphism Login Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="leaves">
+        <div class="set">
+          <div><img src="./Images/leaf_01.png" alt="" /></div>
+          <div><img src="./Images/leaf_02.png" alt="" /></div>
+          <div><img src="./Images/leaf_03.png" alt="" /></div>
+          <div><img src="./Images/leaf_04.png" alt="" /></div>
+          <div><img src="./Images/leaf_01.png" alt="" /></div>
+          <div><img src="./Images/leaf_02.png" alt="" /></div>
+          <div><img src="./Images/leaf_03.png" alt="" /></div>
+          <div><img src="./Images/leaf_04.png" alt="" /></div>
+        </div>
+      </div>
+      <img src="./Images/bg.jpg" alt="" class="bg" />
+      <img src="./Images/girl.png" alt="" class="girl" />
+      <img src="./Images/trees.png" alt="" class="trees" />
+      <div class="login">
+        <h2>Sign In</h2>
+        <div class="inputBox">
+          <input type="text" placeholder="Username" />
+        </div>
+        <div class="inputBox">
+          <input type="password" placeholder="Password" />
+        </div>
+        <div class="inputBox">
+          <input type="submit" value="Login" id="btn" />
+        </div>
+        <div class="group">
+          <a href="#">Forget Password</a>
+          <a href="https://www.youtube.com/watch?v=ao4RCon11eY">Signup</a>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".login"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
+  </body>
+</html>
